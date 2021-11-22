@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.medicare.sisgninnotwork4.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_createaccountFragment"
+            app:destination="@id/createaccountFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.medicare.sisgninnotwork4.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_ambulanceFragment"
+            app:destination="@id/ambulanceFragment" />
+        <action
+            android:id="@+id/action_notificationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ambulanceFragment"
+        android:name="com.medicare.sisgninnotwork4.AmbulanceFragment"
+        android:label="fragment_ambulance"
+        tools:layout="@layout/fragment_ambulance" />
+    <fragment
+        android:id="@+id/createaccountFragment"
+        android:name="com.medicare.sisgninnotwork4.CreateaccountFragment"
+        android:label="fragment_createaccount"
+        tools:layout="@layout/fragment_createaccount" >
+        <action
+            android:id="@+id/action_createaccountFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.medicare.sisgninnotwork4.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" >
+        <action
+            android:id="@+id/action_employeeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_employeeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_employeeFragment_to_ambulanceFragment"
+            app:destination="@id/ambulanceFragment" />
+    </fragment>
+</navigation>

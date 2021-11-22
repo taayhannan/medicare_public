@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "978147312745",
+    "firebase_url": "https://sisgninnotwork4.firebaseio.com",
+    "project_id": "sisgninnotwork4",
+    "storage_bucket": "sisgninnotwork4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978147312745:android:a6ef8a4828d7e7f6",
+        "android_client_info": {
+          "package_name": "com.medicare.sisgninnotwork4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978147312745-p3ssgdr9gjaq9624h1bllsl5lno5mrrc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medicare.sisgninnotwork4",
+            "certificate_hash": "c1ae868caf9a1b4cae008294f934d78bf7ace8c1"
+          }
+        },
+        {
+          "client_id": "978147312745-i20m35llhd0bginftugf0232f8mvtg53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-QVS354d6ghc2z4mMzonABWO9nfUqTls"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978147312745-i20m35llhd0bginftugf0232f8mvtg53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

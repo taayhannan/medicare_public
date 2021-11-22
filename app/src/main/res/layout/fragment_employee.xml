@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeFragment"
+    android:background="@android:color/black">
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:ems="10"
+
+
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+
+        android:id="@+id/et_patient_name"
+        android:hint="Enter Patiet name"
+
+       android:layout_alignParentTop="true"/>
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:ems="10"
+
+
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+
+        android:id="@+id/et_blood_group"
+        android:hint="Blood Group(AS:AB+,etc)"
+
+        android:layout_below="@id/et_patient_name"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:ems="10"
+
+
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+
+        android:hint="Date(yyyymmdd)"
+        android:id="@+id/et_date"
+        android:layout_below="@id/et_blood_group"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:ems="10"
+
+
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+
+        android:hint="Time(hhmm)"
+        android:id="@+id/et_time"
+        android:layout_below="@id/et_date"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:padding="8dp"
+        android:background="#8C123B"
+        android:text="  Inform students"
+        android:id="@+id/button_inform_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/et_time"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_inform"
+        />
+    <Button
+        android:layout_marginBottom="50dp"
+        android:padding="8dp"
+        android:background="#8C123B"
+        android:text=" Add Ambulance drivers Number"
+        android:id="@+id/button_add_mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_inform"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:ems="10"
+
+
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+
+        android:hint="Enter Contact number"
+        android:id="@+id/et_phno"
+        android:layout_above="@id/button_add_mob"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+
+
+</RelativeLayout>

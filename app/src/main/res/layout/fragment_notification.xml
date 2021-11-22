@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:background="@android:color/background_dark"
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvContacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/button_signout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:textColor="@android:color/darker_gray"
+            android:background="#014666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambulance"
+            android:id="@+id/button_ambulance"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/button_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_ambulance"
+            android:layout_centerHorizontal="true"
+            android:background="#00344D"
+
+            android:layout_marginTop="10dp"
+            android:text="sign out" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
